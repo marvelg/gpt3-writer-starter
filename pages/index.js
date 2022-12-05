@@ -36,19 +36,19 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>AI Admission Officer</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Get your college essay reviewed by an AI admission officer.</h1>
+            <h1>Essay reviewed by an AI admission officer.</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Submit your prompt and your essay. Get specific feedback in seconds</h2>
+            <h2>Submit your essay. Get specific feedback in seconds</h2>
           </div>
         </div>
         <div className="prompt-container">
-          <textarea placeholder="start typing here" className="prompt-box" 
+          <textarea placeholder="Copy and paste your essay!" className="prompt-box" 
           value = {userInput} onChange = {onUserChangedText}/>
           <div className="prompt-buttons">
             <a
@@ -56,7 +56,7 @@ const Home = () => {
               onClick={callGenerateEndpoint}
             >
               <div className="generate">
-                {isGenerating ? <p>Loading...</p> : <p>Generate</p>}
+                {isGenerating ? <p>Loading...</p> : <p>Generate Feedback</p>}
               </div>
             </a>
           </div>
@@ -64,7 +64,7 @@ const Home = () => {
             <div className="output">
               <div className="output-header-container">
                 <div className="output-header">
-                  <h3>Output</h3>
+                  <h3>Feedback</h3>
                 </div>
               </div>
               <div className="output-content">
