@@ -24,7 +24,7 @@ const generateAction = async (req, res) => {
             Essay: ${req.body.userInput}
             Admissions Officer:`,
     temperature: 0.9,
-    max_tokens: 1200,
+    max_tokens: 450,
   });
   
   const basePromptOutput = baseCompletion.data.choices.pop();
